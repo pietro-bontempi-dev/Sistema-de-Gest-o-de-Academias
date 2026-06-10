@@ -36,21 +36,11 @@ O objetivo é simular um cenário real de uma rede de academias, aplicando conce
 academia-rede/
 │
 ├── README.md
-├── scripts/
-│   ├── 01_create_database.sql
-│   ├── 02_create_tables.sql
-│   ├── 03_functions.sql
-│   ├── 04_procedures.sql
-│   ├── 05_triggers.sql
-│   ├── 06_views.sql
-│   └── 07_inserts.sql
+├── sistema_de_gestao_academias.sql
 │
-├── diagramas/
-│   ├── DER.png
-│   └── Modelo_Relacional.pdf
+├── diagrama_relacionamentos.png
 │
-└── docs/
-    └── Documentacao_Projeto.pdf
+└── Prova P2 Banco de Dados I.txt
 ```
 
 ---
