@@ -33,7 +33,7 @@ O objetivo é simular um cenário real de uma rede de academias, aplicando conce
 # 📂 Estrutura do Projeto
 
 ```text
-academia-rede/
+Sistema de Gestão de Academias/
 │
 ├── README.md
 ├── sistema_de_gestao_academias.sql
@@ -306,7 +306,7 @@ Lista os funcionários agrupados por unidade.
 ## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/pietro-bontempi-dev/Sistema-de-Gest-o-de-Academias.git
 ```
 
 ---
@@ -319,26 +319,6 @@ Utilize uma das ferramentas abaixo:
 - DBeaver;
 - phpMyAdmin;
 - Linha de comando do MySQL.
-
----
-
-## 3. Executar os scripts na ordem correta
-
-```text
-01_create_database.sql
-
-02_create_tables.sql
-
-03_functions.sql
-
-04_procedures.sql
-
-05_triggers.sql
-
-06_views.sql
-
-07_inserts.sql
-```
 
 ---
 
@@ -430,8 +410,8 @@ Este projeto foi desenvolvido com fins educacionais para aplicação prática do
 
 **Pietro Zamperlini Bontempi**
 
-- GitHub: https://github.com/SEU-USUARIO
-- LinkedIn: https://linkedin.com/in/SEU-USUARIO
+- GitHub: https://github.com/pietro-bontempi-dev
+- LinkedIn: https://www.linkedin.com/in/pietro-bontempi-67ba571b8
 
 ---
 
