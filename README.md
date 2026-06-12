@@ -39,6 +39,7 @@ Sistema de Gestão de Academias/
 ├── sistema_de_gestao_academias.sql
 │
 ├── diagrama_relacionamentos.png
+├── modelo-entidade-relacionamento.png
 │
 └── Prova P2 Banco de Dados I.txt
 ```
