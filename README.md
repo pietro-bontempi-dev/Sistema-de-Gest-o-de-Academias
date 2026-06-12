@@ -1,6 +1,6 @@
-# 🏋️ Sistema de Gerenciamento de Academias de Rede
+# Sistema de Gerenciamento de Academias de Rede
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 Este projeto consiste no desenvolvimento de um **Banco de Dados Relacional** para um **Sistema de Gerenciamento de Academias de Rede**, permitindo o controle integrado das unidades da academia, alunos, funcionários, planos, matrículas, frequência e fichas de treino.
 
@@ -8,7 +8,7 @@ O objetivo é simular um cenário real de uma rede de academias, aplicando conce
 
 ---
 
-## 🎯 Objetivos do Projeto
+## Objetivos do Projeto
 
 - Modelar um banco de dados para uma rede de academias;
 - Implementar tabelas com relacionamentos e restrições;
@@ -20,7 +20,7 @@ O objetivo é simular um cenário real de uma rede de academias, aplicando conce
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **MySQL 8.0+**
 - SQL (DDL e DML)
@@ -30,7 +30,7 @@ O objetivo é simular um cenário real de uma rede de academias, aplicando conce
 
 ---
 
-# 📂 Estrutura do Projeto
+# Estrutura do Projeto
 
 ```text
 Sistema de Gestão de Academias/
@@ -45,7 +45,7 @@ Sistema de Gestão de Academias/
 
 ---
 
-# 📋 Escopo do Sistema
+# Escopo do Sistema
 
 O sistema permite gerenciar:
 
@@ -61,7 +61,7 @@ O sistema permite gerenciar:
 
 ---
 
-# 🏢 Entidades do Sistema
+# Entidades do Sistema
 
 ## Unidades
 
@@ -157,45 +157,7 @@ Permite auditoria e acompanhamento da frequência dos alunos.
 
 Armazena os treinos prescritos pelos professores.
 
----
-
-# 🔗 Modelo Relacional
-
-## Relacionamentos
-
-| Entidades | Cardinalidade |
-|-----------|---------------|
-| Usuários × Funcionários | 1:1 |
-| Usuários × Alunos | 1:1 |
-| Unidades × Funcionários | 1:N |
-| Unidades × Alunos | 1:N |
-| Alunos × Matrículas | 1:N |
-| Planos × Matrículas | 1:N |
-| Alunos × Check-ins | 1:N |
-| Unidades × Check-ins | 1:N |
-| Alunos × Fichas de Treino | 1:N |
-| Funcionários × Fichas de Treino | 1:N |
-| Matrículas × Histórico de Matrículas | 1:N |
-
----
-
-## Relacionamento N:N Normalizado
-
-Conceitualmente:
-
-```text
-Alunos ←→ Planos
-```
-
-Foi implementado através da tabela intermediária:
-
-```text
-Alunos (1) ← Matrículas → (1) Planos
-```
-
----
-
-# ⚙️ Regras de Negócio
+# Regras de Negócio
 
 ## Controle de acesso à rede
 
@@ -221,7 +183,7 @@ Toda alteração de status em uma matrícula é registrada automaticamente.
 
 ---
 
-# 🧩 Objetos Programáveis
+# Objetos Programáveis
 
 ## Stored Function
 
@@ -251,7 +213,7 @@ CALL sp_realizar_checkin(1, 2);
 
 ---
 
-# 🔔 Triggers
+# Triggers
 
 ## `tr_validar_cref_professor`
 
@@ -265,7 +227,7 @@ Registra automaticamente alterações no status das matrículas.
 
 ---
 
-# 👁 Views
+# Views
 
 ## `vw_alunos_ativos`
 
@@ -285,7 +247,7 @@ Lista os funcionários agrupados por unidade.
 
 ---
 
-# 📊 Estrutura do Banco
+# Estrutura do Banco
 
 ## Principais tabelas
 
@@ -301,7 +263,7 @@ Lista os funcionários agrupados por unidade.
 
 ---
 
-# 🚀 Como Executar o Projeto
+# Como Executar o Projeto
 
 ## 1. Clonar o repositório
 
@@ -322,7 +284,7 @@ Utilize uma das ferramentas abaixo:
 
 ---
 
-# 🧪 Exemplos de Teste
+# Exemplos de Teste
 
 ## Consultar alunos ativos
 
@@ -382,7 +344,7 @@ SELECT * FROM historico_matriculas;
 
 ---
 
-# 📈 Possíveis Evoluções do Projeto
+# Possíveis Evoluções do Projeto
 
 - Controle financeiro e pagamentos;
 - Integração com aplicativos mobile;
@@ -394,7 +356,7 @@ SELECT * FROM historico_matriculas;
 
 ---
 
-# 🎓 Contexto Acadêmico
+# Contexto Acadêmico
 
 Este projeto foi desenvolvido com fins educacionais para aplicação prática dos conteúdos relacionados a:
 
@@ -406,7 +368,7 @@ Este projeto foi desenvolvido com fins educacionais para aplicação prática do
 
 ---
 
-# 👨‍💻 Autor
+# Autor
 
 **Pietro Zamperlini Bontempi**
 
@@ -415,7 +377,7 @@ Este projeto foi desenvolvido com fins educacionais para aplicação prática do
 
 ---
 
-# 📄 Licença
+# Licença
 
 Este projeto foi desenvolvido para fins acadêmicos e de aprendizado.
 

@@ -1,6 +1,8 @@
+/* Criação do Banco */
 CREATE DATABASE academia_rede;
 USE academia_rede;
 
+/* criação da tabela de unidades de academia */
 CREATE TABLE unidades (
     id_unidade INT AUTO_INCREMENT PRIMARY KEY,
     nome_fantasia VARCHAR(100) NOT NULL,
@@ -11,6 +13,7 @@ CREATE TABLE unidades (
     telefone VARCHAR(20)
 );
 
+/* criação da tabela de tipos de usuario da academia */
 CREATE TABLE usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(150) UNIQUE NOT NULL,
@@ -25,6 +28,7 @@ CREATE TABLE usuarios (
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+/* criação da tabela de cadastro de funcionários da academia */
 CREATE TABLE funcionarios (
     id_funcionario INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT UNIQUE NOT NULL,
@@ -41,6 +45,7 @@ CREATE TABLE funcionarios (
         REFERENCES unidades(id_unidade)
 );
 
+/* criação da tabela de cadastro de alunos da academia */
 CREATE TABLE alunos (
     id_aluno INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT UNIQUE NOT NULL,
@@ -57,6 +62,7 @@ CREATE TABLE alunos (
         REFERENCES unidades(id_unidade)
 );
 
+/* criação da tabela com tipos de planos de academia */
 CREATE TABLE planos (
     id_plano INT AUTO_INCREMENT PRIMARY KEY,
     nome_plano VARCHAR(100) NOT NULL,
@@ -68,6 +74,7 @@ CREATE TABLE planos (
     ) NOT NULL
 );
 
+/* criação da tabela de status de matriculas */
 CREATE TABLE matriculas (
     id_matricula INT AUTO_INCREMENT PRIMARY KEY,
     id_aluno INT NOT NULL,
@@ -87,6 +94,7 @@ CREATE TABLE matriculas (
         REFERENCES planos(id_plano)
 );
 
+/* criação da tabela para controle e registro de check-ins */
 CREATE TABLE checkins (
     id_checkin INT AUTO_INCREMENT PRIMARY KEY,
     id_aluno INT NOT NULL,
@@ -100,6 +108,7 @@ CREATE TABLE checkins (
         REFERENCES unidades(id_unidade)
 );
 
+/* criação da tabela de fichas de treino */
 CREATE TABLE fichas_treino (
     id_ficha INT AUTO_INCREMENT PRIMARY KEY,
     id_aluno INT NOT NULL,
@@ -114,6 +123,7 @@ CREATE TABLE fichas_treino (
         REFERENCES funcionarios(id_funcionario)
 );
 
+/* criação da tabela com histórico das matrículas */
 CREATE TABLE historico_matriculas (
     id_historico INT AUTO_INCREMENT PRIMARY KEY,
     id_matricula INT NOT NULL,
