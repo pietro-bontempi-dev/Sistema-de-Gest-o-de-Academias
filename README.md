@@ -344,18 +344,6 @@ SELECT * FROM historico_matriculas;
 
 ---
 
-# Possíveis Evoluções do Projeto
-
-- Controle financeiro e pagamentos;
-- Integração com aplicativos mobile;
-- Agendamento de aulas coletivas;
-- Controle de equipamentos e manutenção;
-- Dashboard gerencial;
-- Programa de indicação de alunos;
-- Integração com reconhecimento facial nas catracas.
-
----
-
 # Contexto Acadêmico
 
 Este projeto foi desenvolvido com fins educacionais para aplicação prática dos conteúdos relacionados a:
